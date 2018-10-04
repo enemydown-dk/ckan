@@ -30,7 +30,7 @@ def parse_version(s):
 HERE = os.path.dirname(__file__)
 with open(os.path.join(HERE, 'requirement-setuptools.txt')) as f:
         setuptools_requirement = f.read().strip()
-min_setuptools_version = parse_version(setuptools_requirement.split('==')[1])
+min_setuptools_version = parse_version(setuptools_requirement.split('==')[1]))
 #if parse_version(setuptools_version) < min_setuptools_version:
 #    raise AssertionError(
 #        'setuptools version error\n'
@@ -38,7 +38,7 @@ min_setuptools_version = parse_version(setuptools_requirement.split('==')[1])
 #        'Install the recommended version:\n'
 #        '    pip install -r requirement-setuptools.txt\n'
 #        'and then try again to install ckan into your python environment.'
-    )
+#    )
 
 
 entry_points = {
